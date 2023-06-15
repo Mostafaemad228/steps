@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
 
 const Advices = [
-  "Study Hard",
-  "Apply For job",
-  "Enjoy your money",
+  "Study Hard 💪",
+  "Apply For job 👌",
+  "Enjoy your Time and money ✌",
 ]
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <div className={`${steps >= 2 ? "active" : ""}`} > 2 </div>
           <div className={`${steps >= 3 ? "active" : ""}`} > 3 </div>
         </div>
-        <p className="message"> Step{steps} : {Advices[steps - 1]} </p>
+        <p className="message"> Step{steps} : "{Advices[steps - 1]}" </p>
         <div className="buttons">
           <button onClick={handllerPrevious} > Previous </button>
           <button onClick={handllerNext} > Next </button>
